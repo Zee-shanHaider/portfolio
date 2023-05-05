@@ -1,0 +1,28 @@
+import React from 'react'
+import { BrowserRouter as Router, useNavigate } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
+import Index from '../components/Index/Index';
+import About from '../components/About/About';
+import Contact from '../components/Contact/Contact';
+import Blog from '../components/Blog/Blog';
+import Error from '../components/404Error/404Error';
+
+
+const Navigation = () => {
+  return (
+    <div>
+       <Router>
+        <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path='/about' element={<About/>} />
+            <Route path='/contact' element={<Contact/>} />
+            <Route path='/blog' element={<Blog/>} />
+            <Route path='*' element={<Error/>} />
+
+        </Routes>
+      </Router>
+    </div>
+  )
+}
+
+export default Navigation
