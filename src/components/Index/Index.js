@@ -28,7 +28,6 @@ const Index = () => {
     let myAppRef = React.createRef()
     const location = useLocation();
      const ref = useRef(null);
-    // let navLinks =document.getElementById("nav-links");
     function showMenu(){
         myRef.current.style.right = "0";
         myRef.current.style.transition = "1s"
@@ -77,12 +76,12 @@ useEffect(() => {
                 
             <i className="fa fa-times" onClick={()=>closeMenu()}></i>
                 <ul className="navlist">
-                <li> <Link to={'/'}>  HOME </Link> </li>
-                    <li> <Link to={'/about'}> ABOUT </Link> </li>
+                <li> <Link to={'/portfolio'}>  HOME </Link> </li>
+                    <li> <Link to={'/portfolio/about'}> ABOUT </Link> </li>
                     <li> <Link onClick={scrollToServices}> Services </Link> </li>
                     <li> <Link onClick={scrollToProjects}> Projects </Link> </li>
                     <li> <a href={resume} target='_blank' rel="noreferrer">Resume</a> </li>
-                    <li> <Link to={'/contact'}> CONTACT </Link> </li>
+                    <li> <Link to={'/portfolio/contact'}> CONTACT </Link> </li>
                 </ul>
             </div>
             
@@ -111,7 +110,7 @@ useEffect(() => {
             <p className="para">
             I’m a software engineer specializing in MEAN/MERN technologies, I have  a <br/> demonstrated track record of developing robust and scalable web applications <br/> using industry-leading tools such as MongoDB/MySQL, Express, <br/> Angular/React, and Node.js.
             </p>
-            <Link to={'/about'} className="hero-btn">Visit to know More</Link>
+            <Link to={'/portfolio/about'} className="hero-btn">Visit to know More</Link>
         </div>
     </section> 
     
@@ -332,7 +331,7 @@ useEffect(() => {
     <p className="para">
     If you have any questions or would like to discuss potential collaborations  or job opportunities,<br/> please feel free to contact me using the information provided. <br/>
     </p>
-    <Link to={'/contact'} className="hero-btn btn-custom">Contact Me</Link>
+    <Link to={'/portfolio/contact'} className="hero-btn btn-custom">Contact Me</Link>
 </section>
 
 

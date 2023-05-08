@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import imgLogo from '../../public/images/logo.png'
 import { Link } from 'react-router-dom';
 import navLogo from '../../public/images/navLogo1.png'
 import resume from '../../public/images/resume.pdf'
@@ -17,7 +16,6 @@ const Navbar = ({header}) => {
         }
       })
     let myRef = React.createRef();
-    // let navLinks =document.getElementById("nav-links");
     function showMenu(){
         myRef.current.style.right = "0";
         myRef.current.style.transition = "1s"
@@ -46,11 +44,11 @@ const Navbar = ({header}) => {
                 
                 <i class="fa fa-times" onClick={()=>closeMenu()}></i>
                 <ul class="navlist">
-                    <li> <Link to={'/'}>  HOME </Link> </li>
-                    <li> <Link to={'/about'}> ABOUT </Link> </li>
-                    <li> <Link to={'/#service'}> Services </Link> </li>
+                    <li> <Link to={'/portfolio'}>  HOME </Link> </li>
+                    <li> <Link to={'/portfolio/about'}> ABOUT </Link> </li>
+                    <li> <Link to={'/portfolio/#service'}> Services </Link> </li>
                     <li> <a href={resume} target='_blank' rel="noreferrer">Resume</a> </li>
-                    <li> <Link to={'/contact'}> CONTACT </Link> </li>
+                    <li> <Link to={'/portfolio/contact'}> CONTACT </Link> </li>
                 </ul>
             </div>
             

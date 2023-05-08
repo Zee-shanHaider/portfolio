@@ -31,7 +31,7 @@ In addition to my technical skills, I am a strong communicator and team player. 
 
 Overall, I am committed to delivering high-quality solutions that meet the needs of my clients and users. If you're looking for a Mean/Mern developer who is passionate, collaborative, and results-driven, then I'm the right person for the job.
                 </p>
-                <Link to={'/contact'} class="hero-btn red-btn">CONTACT NOW</Link>
+                <Link to={'/portfolio/contact'} class="hero-btn red-btn">CONTACT NOW</Link>
             </div>
             <div class="about-column ">
                 <img src={zeeshan} alt=""/>
