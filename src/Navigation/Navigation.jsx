@@ -11,7 +11,7 @@ import Error from '../components/404Error/404Error';
 const Navigation = () => {
   return (
     <div>
-       <Router>
+       <Router basename='/portfolio'>
         <Routes>
             <Route path="/" element={<Index />} />
             <Route path='/about' element={<About/>} />
