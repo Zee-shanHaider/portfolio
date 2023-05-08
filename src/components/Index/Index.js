@@ -81,7 +81,7 @@ useEffect(() => {
                     <li> <Link to={'/about'}> ABOUT </Link> </li>
                     <li> <Link onClick={scrollToServices}> Services </Link> </li>
                     <li> <Link onClick={scrollToProjects}> Projects </Link> </li>
-                    <li> <a href={resume} target='_blank'>Resume</a> </li>
+                    <li> <a href={resume} target='_blank' rel="noreferrer">Resume</a> </li>
                     <li> <Link to={'/contact'}> CONTACT </Link> </li>
                 </ul>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
-import { BrowserRouter as Router, useNavigate } from "react-router-dom";
-import { Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Index from '../components/Index/Index';
 import About from '../components/About/About';
 import Contact from '../components/Contact/Contact';
