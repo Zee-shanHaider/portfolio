@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import Index from '../components/Index/Index';
 import About from '../components/About/About';
@@ -13,7 +13,7 @@ const Navigation = () => {
     <div>
        <Router>
         <Routes>
-            <Route path="#/portfolio" element={<Index />} />
+            <Route path="/portfolio" element={<Index />} />
             <Route path='/portfolio/about' element={<About/>} />
             <Route path='/portfolio/contact' element={<Contact/>} />
             <Route path='/portfolio/blog' element={<Blog/>} />
