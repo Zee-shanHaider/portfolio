@@ -43,7 +43,7 @@ const handleChange = (e)=>{
                      <i class="fa fa-home" ></i>
                     <span>
                     <h5>
-                        ABC Road, New York Building
+                        Ali Town Lahore
                     </h5>
                     <p class="para">
                         Lahore, Punjab, Pakistan
