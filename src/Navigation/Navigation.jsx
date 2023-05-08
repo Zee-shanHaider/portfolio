@@ -11,12 +11,12 @@ import Error from '../components/404Error/404Error';
 const Navigation = () => {
   return (
     <div>
-       <Router basename='/portfolio'>
+       <Router>
         <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path='/about' element={<About/>} />
-            <Route path='/contact' element={<Contact/>} />
-            <Route path='/blog' element={<Blog/>} />
+            <Route path="/portfolio" element={<Index />} />
+            <Route path='/portfolio/about' element={<About/>} />
+            <Route path='/portfolio/contact' element={<Contact/>} />
+            <Route path='/portfolio/blog' element={<Blog/>} />
             <Route path='*' element={<Error/>} />
 
         </Routes>
