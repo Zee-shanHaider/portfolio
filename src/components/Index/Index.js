@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation} from 'react-router-dom';
 import { Link } from 'react-router-dom'
 import NavLogo from '../../public/images/navLogo1.png'
 import user1 from '../../public/images/user1.jpg'
@@ -25,7 +25,6 @@ import Footer from '../Footer/Footer'
 
 const Index = () => {
     let myRef = React.createRef();
-    let myAppRef = React.createRef()
     const location = useLocation();
      const ref = useRef(null);
     function showMenu(){
@@ -63,6 +62,7 @@ const Index = () => {
 useEffect(() => {
     if (location.hash == '#service') {
       ref.current.scrollIntoView({ behavior: 'smooth' });
+      closeMenu()
     }
   }, [location]);
 

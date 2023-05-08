@@ -36,16 +36,16 @@ const handleChange = (e)=>{
   return (
     <div>
       <Navbar header='Contact me'/>
-      <section class="contact-us">
-       <div class="row">
-           <div class="contact-column">
+      <section className="contact-us">
+       <div className="row">
+           <div className="contact-column">
                  <div>
-                     <i class="fa fa-home" ></i>
+                     <i className="fa fa-home" ></i>
                     <span>
                     <h5>
                         Ali Town Lahore
                     </h5>
-                    <p class="para">
+                    <p className="para">
                         Lahore, Punjab, Pakistan
                     </p>
                     </span>
@@ -53,12 +53,12 @@ const handleChange = (e)=>{
             
                 </div>
             <div>
-                <i class="fa fa-phone" ></i>
+                <i className="fa fa-phone" ></i>
                 <span>
                     <h5>
                         +923047759104
                     </h5>
-                    <p class="para">
+                    <p className="para">
                         Feel free to contact me anytime 
                     </p>
                 </span>
@@ -66,12 +66,12 @@ const handleChange = (e)=>{
 
             </div>
             <div>
-                <i class="fa fa-envelope-o" ></i>
+                <i className="fa fa-envelope-o" ></i>
                 <span>
                     <h5>
                         zeeshan.hayder@outlook.com
                     </h5>
-                    <p class="para">
+                    <p className="para">
                         Email me 
                     </p>
                 </span>
@@ -80,7 +80,7 @@ const handleChange = (e)=>{
             </div>
         
            </div>
-           <div class="contact-column">
+           <div className="contact-column">
                     <Formik
                 initialValues={
                   { name: '', email: '', subject: '', message: '' }
@@ -124,7 +124,7 @@ const handleChange = (e)=>{
                     {errors.message && touched.message ? (
                       <div className='error'>{errors.message}</div>
                     ) : null}
-                    <button class="red-btn hero-btn" type="submit">Send Message</button>
+                    <button className="red-btn hero-btn" type="submit">Send Message</button>
                   </Form>
                 )}
               </Formik>

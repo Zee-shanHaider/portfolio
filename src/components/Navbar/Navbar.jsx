@@ -35,15 +35,15 @@ const Navbar = ({header}) => {
   return (
     <>
          <div>
-       <section class="sub-header">
-        <nav class="navbar">
-            <div class="navLogo">
+       <section className="sub-header">
+        <nav className="navbar">
+            <div className="navLogo">
                <img src={navLogo} alt="Loading..."/>
             </div>
-            <div ref={myRef} class="nav-links" id="nav-links">
+            <div ref={myRef} className="nav-links" id="nav-links">
                 
-                <i class="fa fa-times" onClick={()=>closeMenu()}></i>
-                <ul class="navlist">
+                <i className="fa fa-times" onClick={()=>closeMenu()}></i>
+                <ul className="navlist">
                     <li> <Link to={'/portfolio'}>  HOME </Link> </li>
                     <li> <Link to={'/portfolio/about'}> ABOUT </Link> </li>
                     <li> <Link to={'/portfolio/#service'}> Services </Link> </li>
@@ -52,10 +52,10 @@ const Navbar = ({header}) => {
                 </ul>
             </div>
             
-            <div class="burger" onClick={()=>showMenu()}>
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+            <div className="burger" onClick={()=>showMenu()}>
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
             </div>
         </nav>
         
