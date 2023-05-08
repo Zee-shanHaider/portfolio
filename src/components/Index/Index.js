@@ -41,6 +41,7 @@ const Index = () => {
           if (element) {
             // 👇 Will scroll smoothly to the top of the next section
             element.scrollIntoView({ behavior: 'smooth' });
+            closeMenu()
           }
         }
         const scrollToProjects = () => {
@@ -48,6 +49,7 @@ const Index = () => {
           if (element) {
             // 👇 Will scroll smoothly to the top of the next section
             element.scrollIntoView({ behavior: 'smooth' });
+            closeMenu()
           }
         }
         const options = {
