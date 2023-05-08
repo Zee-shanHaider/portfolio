@@ -30,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://zee-shanhaider.github.io/portfolio",
+  "homepage": "https://zee-shanhaider.github.io#/portfolio",
   "eslintConfig": {
     "extends": [
       "react-app",
