@@ -6,7 +6,7 @@ import { animated, useSpring } from '@react-spring/web'
   
  
 
-const Navbar = ({header}) => {
+const Navbar = ({header, navStyle}) => {
     const styles = useSpring({
         from: {
           opacity: 0
@@ -43,7 +43,7 @@ const Navbar = ({header}) => {
             <div className="navLogo">
                <img src={navLogo} alt="Loading..."/>
             </div>
-            <div ref={myRef} className="nav-links" id="nav-links">
+            <div ref={myRef}  className="nav-links" id="nav-links">
                 
                 <i className="fa fa-times" onClick={()=>closeMenu()}></i>
                 <ul className="navlist">
