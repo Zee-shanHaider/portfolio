@@ -47,11 +47,11 @@ const Navbar = ({header, navStyle}) => {
                 
                 <i className="fa fa-times" onClick={()=>closeMenu()}></i>
                 <ul className="navlist">
-                    <li> <Link to={'/portfolio'}>  HOME </Link> </li>
-                    <li> <Link to={'/portfolio/about'}> ABOUT </Link> </li>
-                    <li> <Link to={'/portfolio/#service'}> Services </Link> </li>
+                    <li> <Link to={'#/portfolio'}>  HOME </Link> </li>
+                    <li> <Link to={'#/portfolio/about'}> ABOUT </Link> </li>
+                    <li> <Link to={'#/portfolio/#service'}> Services </Link> </li>
                     <li> <a href={resume} target='_blank' rel="noreferrer">Resume</a> </li>
-                    <li> <Link to={'/portfolio/contact'}> CONTACT </Link> </li>
+                    <li> <Link to={'#/portfolio/contact'}> CONTACT </Link> </li>
                 </ul>
             </div>
             
