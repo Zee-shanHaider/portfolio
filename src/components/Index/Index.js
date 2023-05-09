@@ -23,6 +23,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Footer from '../Footer/Footer'
 
+
 const Index = () => {
     let myRef = React.createRef();
     const location = useLocation();
@@ -51,24 +52,33 @@ const Index = () => {
             closeMenu()
           }
         }
+
         const options = {
                 autoplay: true,
                 autoplayTimeout: 3000, // Time until next slide starts (in ms)
-                autoplayHoverPause: true, // Pause autoplay when hovering over carousel
-                items: 3,
                 loop: true,
                 margin: 30,
+                responsiveClass: true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                }
 };
 useEffect(() => {
     if (location.hash == '#service') {
       ref.current.scrollIntoView({ behavior: 'smooth' });
-      closeMenu()
     }
+    closeMenu()
   }, [location]);
 
   return (
     <>
     <div>
+
     <section className="header">
         <nav className="navbar">
             <div className="navLogo">
@@ -115,6 +125,9 @@ useEffect(() => {
             <Link to={'/portfolio/about'} className="hero-btn">Visit to know More</Link>
         </div>
     </section> 
+   
+
+
     
     <section ref={ref} id='services' className="course">
         <h1>
@@ -126,7 +139,6 @@ useEffect(() => {
         <div className="center">
             {/* <img src={html} alt="html" /> */}
             <img src={react} alt="React" />
-            {/* <img src={bootstrap} alt="bootstrap" /> */}
             <img src={angular} alt="Angular" />
             <img src={node} alt="Node" />
             <img src={mongo} alt="mongoDB" />

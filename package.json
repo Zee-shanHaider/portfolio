@@ -10,12 +10,12 @@
     "emailjs-com": "^3.2.0",
     "formik": "^2.2.9",
     "react": "^18.2.0",
-    "react-scripts": "5.0.1",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
-    "react-marquee": "^1.0.0",
+    "react-loader-spinner": "^5.3.4",
     "react-owl-carousel": "^2.3.3",
     "react-router-dom": "^6.10.0",
+    "react-scripts": "5.0.1",
     "react-spring": "^9.7.1",
     "react-typewriter-effect": "^1.1.0",
     "typewriter-effect": "^2.19.0",
@@ -24,8 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -51,6 +51,5 @@
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
-    
   }
 }

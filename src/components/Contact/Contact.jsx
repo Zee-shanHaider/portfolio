@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import { Formik, Form, Field, useFormikContext } from 'formik';
 import { send } from 'emailjs-com';
 import * as Yup from 'yup';
 import { useState } from 'react'
+import { Audio } from 'react-loader-spinner'
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()

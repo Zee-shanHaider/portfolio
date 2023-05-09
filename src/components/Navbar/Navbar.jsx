@@ -32,6 +32,9 @@ const Navbar = ({header}) => {
         link.click();
         document.body.removeChild(link);
       }
+      useEffect(()=>{
+        closeMenu()
+      },[])
   return (
     <>
          <div>
