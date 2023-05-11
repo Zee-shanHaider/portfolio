@@ -34,8 +34,9 @@ const handleChange = (e)=>{
   setToSend({ ...toSend, [e.target.name]: e.target.value });
   console.log(toSend)
 }
+const [loading, setLoading] = useState(false);
   return (
-    <div>
+      <div style={{ position: 'relative', height: '100%' }}>
       <Navbar header='Contact me'/>
       <section className="contact-us">
        <div className="row">
@@ -88,7 +89,7 @@ const handleChange = (e)=>{
                 }
                 validationSchema={SignupSchema}
                 onSubmit={(values, {resetForm}) => {
-                  console.log(values)
+                  setLoading(true);
                   // same shape as initial values
                   send(
                     'service_1qppybs',
@@ -103,6 +104,7 @@ const handleChange = (e)=>{
                   )
                     .then((response) => {
                       resetForm()
+                      setLoading(false)
                     })
                     .catch((err) => {
                       console.log('FAILED...', err);
@@ -126,11 +128,19 @@ const handleChange = (e)=>{
                       <div className='error'>{errors.message}</div>
                     ) : null}
                     <button className="red-btn hero-btn" type="submit">Send Message</button>
+                    
                   </Form>
                 )}
               </Formik>
 
             </div>
+            {loading && (
+            <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 }}>
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+                  <Audio type="TailSpin" color="#f44336" height={80} width={80} />
+                </div>
+            </div>
+            )}
                
        </div>
     
