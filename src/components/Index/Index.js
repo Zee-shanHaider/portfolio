@@ -90,9 +90,9 @@ useEffect(() => {
                 <ul className="navlist">
                 <li> <Link to={'/portfolio'}>  HOME </Link> </li>
                     <li> <Link to={'/portfolio/about'}> ABOUT </Link> </li>
-                    <li> <Link onClick={scrollToServices}> Services </Link> </li>
-                    <li> <Link onClick={scrollToProjects}> Projects </Link> </li>
-                    <li> <a href={resume} target='_blank' rel="noreferrer">Resume</a> </li>
+                    <li> <Link onClick={scrollToServices}> SERVICES </Link> </li>
+                    <li> <Link onClick={scrollToProjects}> PROJECTS </Link> </li>
+                    <li> <a href={resume} target='_blank' rel="noreferrer">RESUME</a> </li>
                     <li> <Link to={'/portfolio/contact'}> CONTACT </Link> </li>
                 </ul>
             </div>
