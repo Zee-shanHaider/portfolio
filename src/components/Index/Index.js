@@ -9,6 +9,8 @@ import react from "../../public/images/react.png";
 import angular from "../../public/images/angular.png";
 import node from "../../public/images/node.png";
 import mongo from "../../public/images/mongoDB.png";
+import nest from "../../public/images/nestjs.png";
+import next from "../../public/images/nextjs.png";
 import mysql from "../../public/images/mysql.png";
 import todo from "../../public/images/todo.jpg";
 import employee from "../../public/images/employee.jpg";
@@ -156,8 +158,10 @@ const Index = () => {
           <div className="center">
             {/* <img src={html} alt="html" /> */}
             <img src={react} alt="React" />
-            <img src={angular} alt="Angular" />
             <img src={node} alt="Node" />
+            <img src={nest} alt="Nest" />
+            <img src={angular} alt="Angular" />
+            <img src={next} alt="Next" />
             <img src={mongo} alt="mongoDB" />
             <img src={mysql} alt="mysql" />
           </div>
