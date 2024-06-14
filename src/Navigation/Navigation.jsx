@@ -12,7 +12,7 @@ const Navigation = () => {
     <div>
       <Router>
         <Routes>
-          <Route index path="/portfolio" element={<Index />} />
+          <Route index path="/" element={<Index />} />
           <Route path="/portfolio/about" element={<About />} />
           <Route path="/portfolio/contact" element={<Contact />} />
           <Route path="/portfolio/blog" element={<Blog />} />

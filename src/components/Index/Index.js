@@ -89,7 +89,7 @@ const Index = () => {
               <ul className="navlist">
                 <li>
                   {" "}
-                  <Link to={"/portfolio"}> HOME </Link>{" "}
+                  <Link to={"/"}> HOME </Link>{" "}
                 </li>
                 <li>
                   {" "}

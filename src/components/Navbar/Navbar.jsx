@@ -46,7 +46,7 @@ const Navbar = ({ header, navStyle }) => {
               <ul className="navlist">
                 <li>
                   {" "}
-                  <Link to={"/portfolio"}> HOME </Link>{" "}
+                  <Link to={"/"}> HOME </Link>{" "}
                 </li>
                 <li>
                   {" "}
@@ -54,7 +54,7 @@ const Navbar = ({ header, navStyle }) => {
                 </li>
                 <li>
                   {" "}
-                  <Link to={"/portfolio/#service"}> SERVICES </Link>{" "}
+                  <Link to={"/#service"}> SERVICES </Link>{" "}
                 </li>
                 <li>
                   {" "}
